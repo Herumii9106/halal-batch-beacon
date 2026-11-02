@@ -66,7 +66,7 @@ function Index() {
           </div>
           <nav className="hidden gap-6 text-sm font-medium text-muted-foreground md:flex">
             <button onClick={() => go("search")} className="hover:text-primary">Search</button>
-            <button onClick={() => { go("search", "timeline"); if (!result) setResult(products[0]); }} className="hover:text-primary">Traceability</button>
+            <button onClick={() => { go("search", "timeline"); if (!result) setResult(products[0] ?? null); }} className="hover:text-primary">Traceability</button>
             <button onClick={() => go("admin", "admin")} className="hover:text-primary">Admin Panel</button>
           </nav>
           <button
